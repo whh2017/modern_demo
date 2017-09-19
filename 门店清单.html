@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>门店清单</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<style type="text/css">
+		html{ font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+		body{ margin: 0; line-height: 1.5; color: #666; font-size: .24rem; max-width: 640px; margin-left: auto; margin-right: auto;}
+		table{ border-collapse: collapse; border-spacing: 0;}
+		td, th{ padding: 0px;}
+		ul, ol{ margin: 0; padding: 0;}
+		li{ list-style: none;}
+
+		.flex{ display: -webkit-flex; display: flex; display: -webkit-box;}
+		.flex-1{ -webkit-flex: 1; flex: 1; -webkit-box-flex: 1; width: 1px;}
+		.hide{ display: none;}
+		.tabs-list{ width: 100%; border-bottom: solid 1px #d1cbc9;}
+		.tabs-list li{ height: 46px; line-height: 46px; text-align: center; color: #666; font-size: 16px;}
+		.tabs-list li.cur{ border-bottom: solid 2px #b5060e; color: #b5060e;}
+	    .store-table{ padding: 10px;}
+		.store-table td{ border: solid 1px #999; padding: 5px; text-align: center; font-size: 12px; color: #666;}
+	</style>
+</head>
+<body>
+	<section class="store-list">
+		<ul class="tabs-list flex">
+			<li class="flex-1 cur">摩登</li>
+			<li class="flex-1">金逸</li>
+		</ul>
+		<ul class="store-table">
+			<li class="table-list">
+					<table cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="20%">简称</td>
+								<td width="16%">省份</td>
+								<td width="16%">城市</td>
+								<td width="16%">区域</td>
+								<td width="32%">地址</td>
+							</tr>
+							<tr>
+								<td>摩登黄埔店</td>
+								<td>广东</td>
+								<td>广州市</td>
+								<td>黄埔区</td>
+								<td>广州市黄埔区大沙地黄埔东路1-9号东城国际广场</td>
+							</tr>
+							<tr>
+								<td>摩登岗顶总店</td>
+								<td>广东</td>
+								<td>广州市</td>
+								<td>天河区</td>
+								<td>广州市天河区天河路611号</td>
+							</tr>
+							<tr>
+								<td>摩登圣地店</td>
+								<td>广东</td>
+								<td>广州市</td>
+								<td>白云区</td>
+								<td>广州市白云区广州大道北1420号</td>
+							</tr>
+							<tr>
+								<td>摩登海购店</td>
+								<td>广东</td>
+								<td>广州市</td>
+								<td>海珠区</td>
+								<td>广州市海珠区江南大道中219号</td>
+							</tr>
+							<tr>
+								<td>摩登花都店</td>
+								<td>广东</td>
+								<td>广州市</td>
+								<td>花都区</td>
+								<td>广州市花都区新华街建设北路72号1-4层</td>
+							</tr>
+					</table>
+			</li>
+			<li class="table-list hide">
+					<table cellspacing="0" cellpadding="0" >
+						<tr>
+							<td width="20%">简称</td>
+							<td width="16%">省份</td>
+							<td width="16%">城市</td>
+							<td width="16%">区域</td>
+							<td width="32%">地址</td>
+						</tr>
+						<tr>
+							<td rowspan="35">广东省</td>
+							<td rowspan="7">中山</td>
+							<td>中山石岐店</td>
+							<td>石岐区</td>
+							<td>中山市石岐区大信南路2号大信新都汇五楼</td>
+						</tr>
+						<tr>
+							<td>中山小榄店</td>
+							<td>小榄镇</td>
+							<td>中山市小榄镇升平路18号大信新都汇4楼 </td>
+						</tr>
+						<tr>
+							<td>中山东凤店</td>
+							<td>东凤镇</td>
+							<td>中山市东凤镇凤翔大道2号名扬世纪广场第三层</td>
+						</tr>
+						<tr>
+							<td>中山古镇店</td>
+							<td>古镇镇</td>
+							<td>广东省中山市古镇镇新兴大道东大信新都汇5楼</td>
+						</tr>
+						<tr>
+							<td>中山远洋城店</td>
+							<td>东区</td>
+							<td>中山市东区博爱六路28号远洋广场3幢购物中心第4F405号</td>
+						</tr>
+						<tr>
+							<td>中山三乡店</td>
+							<td width="72">三乡镇</td>
+							<td>中山市三乡镇大布村广场路缤纷汇4楼</td>
+						</tr>
+						<tr>
+							<td>中山天悦城店</td>
+							<td>西区</td>
+							<td>中山市西区富华道32号天悦城广场6楼</td>
+						</tr>
+						<tr>
+							<td rowspan="9">广州</td>
+							<td>广州海珠城IMAX店</td>
+							<td>海珠区</td>
+							<td>广州市海珠区江南大道中180号富力海珠商业广场B区第七层703单元及第八层802单元</td>
+						</tr>
+						<tr>
+							<td>广州维家思店</td>
+							<td>天河区</td>
+							<td>广州市天河区黄埔大道西188号维家思广场三楼</td>
+						</tr>
+						<tr>
+							<td>广州百信店</td>
+							<td>白云区</td>
+							<td>广州市白云区机场路1423-1455号百信三期五层</td>
+						</tr>
+						<tr>
+							<td>广州太阳城店</td>
+							<td>白云区</td>
+							<td>广州市白云区广州大道北1811号太阳城广场3楼</td>
+						</tr>
+						<tr>
+							<td>广州黄埔店</td>
+							<td>黄埔区</td>
+							<td>广州市黄埔区黄埔东路298号惠润广场四楼</td>
+						</tr>
+						<tr>
+							<td>广州和业店</td>
+							<td>荔湾区</td>
+							<td>广州市荔湾区康王中路486号和业广场四楼402</td>
+						</tr>
+						<tr>
+							<td>广州达镖店</td>
+							<td>海珠区</td>
+							<td>广州市海珠区昌岗中路238号达镖国际中心第五层</td>
+						</tr>
+						<tr>
+							<td>广州森多利店</td>
+							<td>荔湾区</td>
+							<td>广州市荔湾区芳村陆居路19号森多利广场二楼</td>
+						</tr>
+						<tr>
+							<td>广州西村店</td>
+							<td>荔湾区</td>
+							<td>广州市荔湾区西增路63号原创元素创意园自编A11号楼A11-201铺</td>
+						</tr>
+						<tr>
+							<td rowspan="8">深圳</td>
+							<td>深圳中心城店</td>
+							<td>福田区</td>
+							<td>深圳市福田区福华一路南中心五路西新怡景商业中心城FG014 </td>
+						</tr>
+						<tr>
+							<td>深圳建安店</td>
+							<td>宝安区</td>
+							<td>深圳宝安区建安二路河东骏丰园首层（抓抓儿童城）</td>
+						</tr>
+						<tr>
+							<td>深圳观澜店</td>
+							<td>观澜镇</td>
+							<td>深圳市观澜镇观光路万悦城广场4楼（富士康南门）</td>
+						</tr>
+						<tr>
+							<td>深圳碧海店</td>
+							<td>宝安区</td>
+							<td>深圳市宝安区西乡兴业路与悦海路交汇处七巧国4楼</td>
+						</tr>
+						<tr>
+							<td>深圳民治店</td>
+							<td>龙华新区</td>
+							<td>深圳市龙华新区民治大道牛栏前大厦岁宝百货三楼</td>
+						</tr>
+						<tr>
+							<td>深圳龙华店</td>
+							<td>龙华新区</td>
+							<td>深圳市龙华新区建设路与东环一路交界处人人乐百货4楼<br>
+								<br></td>
+							</tr>
+							<tr>
+								<td>深圳沙井店</td>
+								<td>宝安区</td>
+								<td>深圳市宝安区沙井街道民主大道岁宝百货三楼</td>
+							</tr>
+							<tr>
+								<td>深圳嘉域店</td>
+								<td>光明新区</td>
+								<td>深圳市光明新区公明街道松白路宏发嘉域花园一期商业裙楼2层</td>
+							</tr>
+							<tr>
+								<td>湛江</td>
+								<td>湛江霞山店</td>
+								<td>霞山区</td>
+								<td>湛江市霞山区人民大道28号怡福国际广场五楼</td>
+							</tr>
+							<tr>
+								<td>肇庆</td>
+								<td>肇庆星湖店</td>
+								<td>端州区</td>
+								<td>肇庆市端州四路10号星湖国际广场四楼</td>
+							</tr>
+							<tr>
+								<td>江门</td>
+								<td>台山地王店</td>
+								<td>台城镇</td>
+								<td>台山市台城镇台山地王广场E区3楼3073号</td>
+							</tr>
+							<tr>
+								<td rowspan="3">东莞</td>
+								<td>东莞虎门店</td>
+								<td>虎门镇</td>
+								<td>东莞市虎门镇长德路3号德兴花园步行街D、E栋四楼<br></td>
+							</tr>
+							<tr>
+								<td>东莞厚街店</td>
+								<td>厚街镇</td>
+								<td>东莞市厚街富民国际鞋业广场C栋4至5楼</td>
+							</tr>
+							<tr>
+								<td>东莞东城店</td>
+								<td>东城区</td>
+								<td>东莞市东城区泰和路友谊综合市场3楼</td>
+							</tr>
+							<tr>
+								<td>惠州</td>
+								<td>惠州意生店</td>
+								<td>惠城区</td>
+								<td>惠州市惠城区江北文明一路5号意生广场5楼  </td>
+							</tr>
+							<tr>
+								<td>阳江</td>
+								<td>阳江名扬店</td>
+								<td>江城区</td>
+								<td>阳江市江城区三环路大润发商业楼4楼 </td>
+							</tr>
+							<tr>
+								<td rowspan="3">佛山</td>
+								<td>佛山南庄店</td>
+								<td>南庄镇</td>
+								<td>佛山市南庄镇吉利购物广场4楼</td>
+							</tr>
+							<tr>
+								<td>佛山黄岐店</td>
+								<td>南海区</td>
+								<td>佛山市南海区大沥镇黄岐岐西路31号南方广场D栋首层</td>
+							</tr>
+							<tr>
+								<td>佛山鹏瑞利IMAX店</td>
+								<td>南海区</td>
+								<td>佛山市南海区桂城街道桂澜南路45号鹏瑞利季华广场三层a3~42</td>
+							</tr>
+					</table>		
+			</li>
+		</ul>
+	</section>
+	
+	<script>
+		var tabs = document.getElementsByClassName("tabs-list");
+		var li_list = tabs[0].getElementsByTagName('li');
+		var table = document.getElementsByClassName("store-table");
+		var table_list = table[0].getElementsByTagName("li");
+
+		for( var i=0; i<li_list.length; i++){
+			li_list[i].index=i;
+			li_list[i].onclick = function(){
+				for( var a=0; a<li_list.length; a++){
+					li_list[a].classList.remove("cur");
+					table_list[a].classList.add("hide");
+				}
+				this.classList.add("cur");
+				table_list[this.index].classList.remove("hide");
+			};
+		}
+	</script>
+</body>
+</html>
